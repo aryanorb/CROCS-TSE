@@ -1,5 +1,8 @@
 # CROCS-TSE
 
+## 📄 Paper Status
+This work is currently under submission to IEEE Transactions on Audio, Speech, and Language Processing (TASLP), 2026.
+
 <p align="center">
   <img src="figures/overall.png" width="800">
 </p>
