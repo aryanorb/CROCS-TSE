@@ -17,7 +17,7 @@ CROCS is a **two-stage target speaker extraction (TSE)** framework that exploits
 - Introduction of low-dimensional speaker embeddings via adpater moduels for speaker discriminability
 
 
-## 📊 Experimental Results
+## 📊 Experimental Results on Libri2Mix-clean dataset sampled at 8 kHz
 <table>
   <tr>
     <td align="center">
