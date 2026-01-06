@@ -15,6 +15,6 @@ CROCS is a **two-stage target speaker extraction (TSE)** framework that exploits
 
 
 ## 📊 Experimental Results
-<p align="center">
-  <img src="assets/results.png" width="700">
+<p align="left">
+  <img src="figures/pesq_distribution_2.png" width="700">
 </p>
