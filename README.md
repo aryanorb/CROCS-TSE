@@ -1,7 +1,7 @@
-# CROCS
+# CROCS-TSE
 
 <p align="center">
-  <img src="figures/overall.png" width="1000">
+  <img src="figures/overall.png" width="800">
 </p>
 
 
