@@ -1,0 +1,7 @@
+torchaudio==2.5.1
+pesq
+pystoi
+asteroid
+wandb==0.19.10
+screen==1.0.1
+librosa==0.11.0
