@@ -11,7 +11,7 @@ This work will be submitted to IEEE Transactions on Audio, Speech, and Language 
 ## 🔊 Overview
 CROCS is a **two-stage target speaker extraction (TSE)** framework that exploits the cross-correlation for complex-spectra of the enrollment and mixture and dual post-refinements with low-dimensional speaker embeddings.
 
-## ✨ Key Features
+## ✨ Key Contributions
 - More interpretable fusion based on cross-correlation between the complex spectra of the enrollment and mixture, in a form analogous to the phase-sensitive mask (PSM)
 - Two-stage-based dual post-refinement to better refine target speech
 - Introduction of low-dimensional speaker embeddings via adpater moduels for speaker discriminability
