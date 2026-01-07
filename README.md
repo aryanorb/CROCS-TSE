@@ -28,3 +28,8 @@ CROCS is a **two-stage target speaker extraction (TSE)** framework that exploits
     </td>
   </tr>
 </table>
+
+## 🌈 Spectrogram Comparisons 
+<p align="center">
+  <img src="figures/spectrogram_6x1_image.png" width="800">
+</p>
