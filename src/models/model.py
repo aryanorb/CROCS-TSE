@@ -80,36 +80,6 @@ def _stft_and_power_compression(audio, compression_factor = None, device = None,
     
     return magnitude, phase
 
-class Adapter(nn.Module):
-    def __init__(self,
-                 emb_dim,
-                 use_norm=True):
-        super(Adapter, self).__init__()
-
-        self.norm = nn.GroupNorm(1, emb_dim) if use_norm else nn.Identity()
-        
-        self.alpha_scale = 0.1
-        self.beta_scale = 0.1
-
-        self.alpha = nn.Conv2d(2*emb_dim, emb_dim, kernel_size=1, bias=False)
-        self.beta  = nn.Conv2d(2*emb_dim, emb_dim, kernel_size=1, bias=False)
-        
-    def forward(self, x, z):
-        
-        B, C, T, F = x.shape
-        
-        xn      = self.norm(x)
-        z       = z.unsqueeze(dim=1)  # [B, 1, C]
-        z_tiled = z.view(B, C, 1, 1).expand(B, C, T, F) 
-        
-        h = torch.cat([xn, z_tiled], dim=1)               # [B,2C,T,F]
-        
-        alpha = self.alpha_scale*torch.tanh(self.alpha(h))  # [B, C, T, F]
-        beta  = self.beta_scale*torch.tanh(self.beta(h))
-        
-        output = x + alpha*xn + beta
-        
-        return output
 
 class CrossMultiHeadAttentionBlock(nn.Module):
     def __init__(self,
