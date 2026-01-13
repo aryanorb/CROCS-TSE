@@ -6,7 +6,7 @@
 
 
 ## 📄 Paper Status
-This work will be submitted to IEEE Transactions on Audio, Speech, and Language Processing (TASLP) in 2026.
+This work will be submitted to IEEE Transactions on Audio, Speech, and Language Processing (TASLP) in 2026 and has not been posted on arXiv.
 
 ## 🔊 Overview
 CROCS is a **two-stage target speaker extraction (TSE)** framework that exploits the cross-correlation for complex-spectra of the enrollment and mixture and dual post-refinements with low-dimensional speaker embeddings.
